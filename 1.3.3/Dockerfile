@@ -1,4 +1,4 @@
-FROM golang:1.3.3-onbuild
+FROM golang:1.3.3
 
-go get code.google.com/p/go.tools/cmd/cover
-go get code.google.com/p/go.tools/cmd/vet
+RUN go get code.google.com/p/go.tools/cmd/cover
+RUN go get code.google.com/p/go.tools/cmd/vet
